@@ -1,0 +1,4 @@
+
+\.idea/
+\video-encoder-client-upload/node_modules/*
+\node-rest-api/node_modules/*
