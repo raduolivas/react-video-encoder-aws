@@ -9,4 +9,8 @@ const s3Config = {
 const s3Region = 'us-east-2 ';
 const s3Bucket = 'samba-challenge-videos';
 
-module.exports = s3Config, s3Region, s3Bucket;
+module.exports = Object.freeze({
+    s3Config : s3Config,
+    s3Region : s3Region,
+    s3Bucket: s3Bucket
+});

@@ -1,6 +1,6 @@
 # Samba Challenge Encode
 
-Samba Challenge Encode is a React + Nodejs solutions for `multipart/form-data` upload through AWS S3 Bucket.
+Samba Challenge Encode is a React + Nodejs solution for `multipart/form-data` upload through AWS S3 Bucket.
 
 
 ## Usage
