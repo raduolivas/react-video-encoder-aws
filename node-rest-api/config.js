@@ -6,7 +6,7 @@ const s3Config = {
     secretAccessKey: s3.secretAccessKey
 };
 
-const s3Region = 'us-east-2 ';
+const s3Region = 'us-east-2';
 const s3Bucket = 'samba-challenge-videos';
 
 module.exports = Object.freeze({

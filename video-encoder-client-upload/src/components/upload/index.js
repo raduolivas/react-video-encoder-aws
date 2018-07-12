@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import classNames from 'classnames';
+
 import './Upload.css';
 import {upload} from "../../helper/upload";
 
 class Upload extends Component {
     state = {
         form : {
-            files:[],
-            title: ''
+            files:[]
         },
         errors: {
-            files:null,
-            title:''
+            files:null
         }
     }
 
@@ -30,15 +29,6 @@ class Upload extends Component {
                         return form.files.length;
                     }
                 }
-            ],
-            title: [
-                {
-                    errorMessage: 'Video title is required',
-                    isValid: () => {
-                        console.log(form.title.length);
-                        return form.title.length;
-                    }
-                }
             ]
         }
         // console.log(fields);
@@ -50,7 +40,6 @@ class Upload extends Component {
 
                 if (isValid === 0) {
                     errors[field] = fieldValidation.errorMessage;
-                    // console.log('Errors Obj', errors[field]);
                 }
             });
         });
@@ -83,7 +72,7 @@ class Upload extends Component {
             }
         }, () => {
             /** form validation over all changes on state**/
-            this.formValidation(['files','title'], (isValid) => {
+            this.formValidation(['files'], (isValid) => {
                 console.log('Form Validations...')
             });
         })
@@ -92,11 +81,11 @@ class Upload extends Component {
     submitVideo = (event) => {
        event.preventDefault();
 
-       this.formValidation(['files','title'], (isValid)=> {
+       this.formValidation(['files'], (isValid)=> {
            if (isValid) {
                const data = this.state.form;
                if (this.props.uploadStart) {
-                    this.props.uploadStart(event);
+                    this.props.uploadStart(data);
                }
                upload(data, (event) =>{
                    if (this.props.uploadEvent) {
@@ -119,24 +108,12 @@ class Upload extends Component {
         })
     }
 
-    /**Change the Video Title Name updating the state**/
-    fieldChanged = (event) => {
-        const form = this.state.form;
-        form[event.target.name] = event.target.value;
-        this.setState({form: form});
-    }
-
     render() {
         const {form, errors} = this.state;
         const {files} = form;
         return (
             <div className={'samba-app-card'}>
                 <form onSubmit={this.submitVideo}>
-                    <div className={classNames('samba-app-form-item', {'error': _.get(errors, 'title')})}>
-                        <label htmlFor={'title'}>Video Title</label>
-                        <input value={_.get(form, 'title')} onChange={this.fieldChanged} name={'title'} placeholder={_.get(errors, 'title') ? _.get(errors, 'title') : null}
-                               type={'text'} id={'title'}/>
-                    </div>
                     <div className={'samba-app-card-header'}>
                         <div className={'samba-app-card-header-inner'}>
                             {

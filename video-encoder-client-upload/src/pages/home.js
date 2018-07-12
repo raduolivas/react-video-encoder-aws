@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
+
 import UploadForm from '../components/upload';
 import Uploading from '../components/uploading';
+import UploadSent from '../components/uploaded';
+
 import _ from 'lodash';
 
 class Home extends Component {
 
-    state = {
-        component: 'UploadForm',
-        data: null,
-        uploadEvent: null
+    constructor(props) {
+
+        super(props);
+
+        this.state = {
+            componentName: 'HomeForm',
+            data: null,
+            uploadEvent: null,
+        };
+
+
+        this.renderComponent = this.renderComponent.bind(this)
+
     }
     /**
      * Dynamic render the upload state, splited by components
@@ -29,12 +41,24 @@ class Home extends Component {
                     })
 
                 }} event={uploadEvent} data={data}/>
+            case 'UploadSent':
+                return(
+                    <UploadSent sendAnotherFile={() => {
 
+                        this.setState({
+                            uploadEvent: null,
+                            data: null,
+                            component: 'UploadForm'
+                        })
+
+                    }} data={data}/>
+                )
             default:
                 return <UploadForm
                     uploadEvent = {(event) => {
                         console.log('Upload event', event);
                         let data = this.state.data;
+
                         if(_.get(event, 'type') === 'success' ) {
                             data = _.get(event, 'payload');
                         }
@@ -45,7 +69,7 @@ class Home extends Component {
                         })
                     }}
                     uploadStart={(data) => {
-                        console.log('Upload start');
+                        console.log('look', data);
                         this.setState({
                             data: data,
                             component: 'Uploading',
