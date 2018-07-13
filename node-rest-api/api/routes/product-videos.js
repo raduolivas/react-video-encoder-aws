@@ -1,31 +1,32 @@
 const express = require('express');
 const router = express.Router();
+const Zencoder = require('zencoder');
+const s3Config = require('../../config');
 
+let zenClient = Zencoder(s3Config.zenCoderKey);
+
+/**External request using Zencoder Package
+ * Get all jobs from Zencoder
+ * **/
 router.get('/', (req, res, next) => {
-    res.status(200).json({
-        message: 'Handling GET request to /videos'
-    });
+    console.log('Gettiong Jobs...')
+    zenClient.Job.list((response, data) => {
+        res.status(200).json({
+            message: data
+        });
+    })
 });
 
+/**External request using Zencoder Package
+ * Get specific Job by ID from Zencoder
+ * **/
 router.get('/:videoId', (req, res, next) => {
     const id = req.params.videoId;
-    if (id === '9999-video') {
+    zenClient.Job.details(id, (response, data) => {
         res.status(200).json({
-            message: 'This is de 9999-video-ID',
-            id: id
+            message: data
         });
-    } else {
-        res.status(200).json({
-           message: 'You passed an ID'
-        })
-    }
-
-});
-
-router.post('/', (req, res, next) => {
-    res.status(200).json({
-        message: 'Handling POST request to /videos'
-    });
+    })
 });
 
 module.exports = router;

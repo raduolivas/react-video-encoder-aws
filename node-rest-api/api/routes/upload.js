@@ -7,31 +7,31 @@ const s3Config = require('../../config');
 
 /**AWS S3 Set up
  * **/
-AWS.config.update(s3Config.s3Config);
+AWS.config.update(s3Config.s3Access);
 
 const s3 = new AWS.S3();
 const upload = multer({
     storage: multerS3({
         s3: s3,
-        bucket: 'samba-challenge-videos',
+        bucket: s3Config.s3Bucket,
         metadata: function (req, file, cb) {
-            cb(null, Object.assign({file: file.originalname},req.body));
+            cb(null, {file: file.originalname});
         },
         key: function (req, file, cb) {
-            cb(null, Date.now().toString())
+            cb(null, 'inputs/' + file.originalname)
         }
     })
 })
 
+/**@Post Request
+ * Request to upload video to S3 Bucket
+ * **/
 router.post('/', upload.array('file', 10),(req, res, next) => {
     var file = req.files;
-    console.log('=======')
+    console.log('=' * 20)
     console.log(file);
-    console.log('=====');
-    // console.log(req.body);
-
     res.status(200).json({
-        message: 'Video uploaded Successfully'
+        message: 'Video Uploaded Successfully'
     });
 });
 
