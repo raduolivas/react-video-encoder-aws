@@ -4,6 +4,8 @@ import UploadForm from '../components/upload';
 import Uploading from '../components/uploading';
 import UploadSent from '../components/uploaded';
 
+import Videos from '../components/videos';
+
 import _ from 'lodash';
 
 class Home extends Component {
@@ -19,14 +21,14 @@ class Home extends Component {
         };
 
 
-        this.renderComponent = this.renderComponent.bind(this)
+        this.renderUploadComponent = this.renderUploadComponent.bind(this)
 
     }
     /**
      * Dynamic render the upload state, splited by components
      * Perform the Uploading component to show progress bar
      * **/
-    renderComponent = () => {
+    renderUploadComponent = () => {
 
         const {component, data, uploadEvent} = this.state;
 
@@ -83,7 +85,8 @@ class Home extends Component {
         return (
             <div className={'samba-app-container'}>
                 <div className={'samba-app-content'}>
-                    {this.renderComponent()}
+                    {this.renderUploadComponent()}
+                    <Videos />
                 </div>
             </div>
         );

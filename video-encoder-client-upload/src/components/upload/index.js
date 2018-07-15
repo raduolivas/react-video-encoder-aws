@@ -6,6 +6,7 @@ import './Upload.css';
 import {upload} from "../../helper/upload";
 
 class Upload extends Component {
+
     state = {
         form : {
             files:[]

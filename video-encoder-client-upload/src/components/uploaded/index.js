@@ -1,12 +1,10 @@
 import React,{Component} from 'react'
-import PropTyes from 'prop-types'
+import './Uploaded.css';
 import _ from 'lodash';
 
-class UploadSent extends Component{
+const UploadSent = (props) =>{
 
-    render(){
-
-        const {data} = this.props;
+        const {data} = props;
         console.log("Data", data);
         const postId = _.get(data, '_id');
 
@@ -24,15 +22,10 @@ class UploadSent extends Component{
                             </div>
 
                             <div className={'samba-app-upload-sent-actions samba-app-form-actions'}>
-                                {/*<button onClick={() => {*/}
-
-
-
-                                {/*}} className={'samba-app-button primary'} type={'button'}>Go to Video</button>*/}
                                 <button onClick={()=> {
 
-                                    if(this.props.sendAnotherFile){
-                                        this.props.sendAnotherFile(true);
+                                    if(props.sendAnotherFile){
+                                        props.sendAnotherFile(true);
                                     }
                                 }} className={'samba-app-button'} type={'button'}>Send another file</button>
                             </div>
@@ -42,7 +35,6 @@ class UploadSent extends Component{
 
             </div>
         )
-    }
 }
 
 export default UploadSent;

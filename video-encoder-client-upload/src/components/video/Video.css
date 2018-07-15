@@ -1,0 +1,22 @@
+.samba-item-video {
+    margin:8px;
+    display:inline-block;
+    cursor: pointer;
+    color:#FFFFFF;
+}
+.samba-item-video
+.samba-video-thumb {
+    border:1px solid gray;
+    width:130px;
+    height:80px;
+}
+
+.samba-item-video
+.samba-video-thumb
+.samba-video-status {
+    position:relative;
+}
+
+.samba-video-status span {
+    font-size: 11px;
+}

@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import _ from 'lodash';
+import loadingImage from '../../img/loading.gif';
+
 class Uploading extends Component {
 
     /*
@@ -33,7 +35,7 @@ class Uploading extends Component {
                         <div className={'samba-app-home-uploading'}>
 
                             <div className={'samba-app-home-uploading-icon'}>
-                                <h2>Sending...</h2>
+                                <img src={loadingImage} />
                             </div>
 
                             <div className={'samba-app-upload-files-total'}>Uploading {totalFiles} files.</div>

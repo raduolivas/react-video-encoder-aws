@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
     console.log('Gettiong Jobs...')
     zenClient.Job.list((response, data) => {
         res.status(200).json({
-            message: data
+            data: data
         });
     })
 });
@@ -24,7 +24,7 @@ router.get('/:videoId', (req, res, next) => {
     const id = req.params.videoId;
     zenClient.Job.details(id, (response, data) => {
         res.status(200).json({
-            message: data
+            data: data
         });
     })
 });
