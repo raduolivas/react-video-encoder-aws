@@ -124,10 +124,12 @@ class Upload extends Component {
                                             files.map((file, index) => {
                                                 return (
                                                     <div key={index} className={'samba-app-files-selected-item'}>
-                                                        <div className={'filename'}>{file.name}</div>
+                                                        <div className={'filename'}>{file.name.substring(0, 20)}</div>
+                                                        <div className={'samba-app-file-remove'}>
                                                             <span onClick={() => this.removeFile(index)}
-                                                            type={'button'} className={'samba-app-file-remove'}>remove
+                                                            type={'button'} >X
                                                             </span>
+                                                        </div>
                                                     </div>
                                                 )
                                             })

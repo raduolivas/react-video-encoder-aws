@@ -34,6 +34,10 @@ a {
   }
   .samba-app-container .samba-app-content {
     float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
@@ -75,6 +79,25 @@ a {
   background: none;
   border: 0 none;
   color: #1b65f6;
+}
+
+.samba-videos-container .loading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.samba-goback-btn {
+  color:#fff;
+  padding: 10px 10px 10px 0;
+  cursor:pointer;
+  margin: 0 10px 10px 0;
+}
+
+.samba-goback-btn :hover {
+  background-color: #b2d8f8;
+  padding: 10px 10px 10px 10px;
 }
 
 

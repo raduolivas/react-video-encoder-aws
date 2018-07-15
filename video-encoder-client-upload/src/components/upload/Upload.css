@@ -8,11 +8,6 @@
     border-radius: 5px;
 }
 
-@media (min-width: 768px) {
-    .samba-app-card {
-        width: 450px;
-    }
-}
 .samba-app-card .samba-app-card-header {
     background: #f3f7ff;
 }
@@ -117,19 +112,39 @@
     margin: -20px -20px 0 -20px;
     padding: 20px;
 }
+.samba-app-files-selected .samba-app-files-selected-item{
+    width:180px;
+    display: inline-block;
+    margin:0 10px;
+}
 
 .samba-app-files-selected .samba-app-files-selected-item .filename {
     flex-grow: 1;
     display: inline-block;
+    background-color:#b2d8f8 ;
+    padding: 10px;
+    width:150px;
+    margin:5px 0;
+    border-radius: 6px 0 0 6px;
 }
 
 .samba-app-files-selected .samba-app-file-remove {
     border: 0 none;
-    padding: 10px;
+    padding: 10px 11px 11px;
     font-size: 12px;
     font-weight: 400;
-    background: none;
     cursor: pointer;
+    float:right;
+    background-color: #d0152e;
+    width:30px;
+    height: 100%;
+    margin-top: 5px;
+    border-radius: 0 6px 6px 0;
+}
+.samba-app-files-selected .samba-app-file-remove span {
+    color:#fff;
+    width:20px;
+    height:20px;
 }
 
 .error {

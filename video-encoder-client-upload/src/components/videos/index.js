@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 import VideosDataStorage from '../../services/api/VideosDataStorage';
 import loadingImage from '../../img/loading_vds.gif';
@@ -13,15 +14,14 @@ class Videos extends Component {
         super(props);
         this.loading = true;
         this.param = null;
-        this.state = {videos: {data:[]}}
+        this.state = {videos: {data:[]}};
     }
 
     async  componentDidMount() {
-        let videos = [];
         VideosDataStorage(this.param).then(videos => {
             this.loading = false;
+            let currentVideo = videos.data[0].job.output_media_files[0].url;
             this.setState({videos});
-            console.log('NEW STATE', this.state)
         });
     }
 
@@ -31,12 +31,14 @@ class Videos extends Component {
 
     render() {
         const videoList = this.state.videos.data.map((vd, index) => {
-            return <Video video={vd} key={index} clicked={() => this.videoClicked(vd.job.id)} />;
+            return <Link to={`/video/${vd.job.id}`}><Video video={vd} key={index} clicked={() => this.videoClicked(vd.job.id)} /></Link>;
         });
         return (
             <div className={'samba-videos-container'}>
-                {this.loading && <img className="loading" src={loadingImage} />}
-                {videoList}
+                <div className={'samba-videos'}>
+                    {this.loading && <img className="loading" src={loadingImage} />}
+                    {videoList}
+                </div>
             </div>
         )
     }

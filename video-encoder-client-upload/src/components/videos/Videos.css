@@ -1,14 +1,23 @@
 .samba-videos-container {
     position:relative;
     margin:10px 0 0 0;
-    width: 450px;
     min-height: 100px;
 
 }
+@media (min-width: 992px) {
+.samba-videos-container
+    .samba-videos {
 
-.samba-videos-container .loading {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+}
+
+.samba-video-player {
+    float: right;
+    margin: 0 0 0 25px;
 }

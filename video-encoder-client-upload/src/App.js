@@ -3,25 +3,21 @@ import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
 
 import { history } from "./history";
 import Home from './pages/home';
-import Header from './components/header';
+import VideoPlayer from './components/player';
 
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
+const App =() => {
+   return (
         <div className={'samba-app-layout'}>
-            <Header />
             <Router history={history}>
                 <Switch>
-                    <Route path={'/'} exact ={true} component={ Home } />
-                    {/*<Route path={'/videos'} component={ Videos } />*/}
-                    {/*<Route path={'/videos/:id'} component={ ItemVideo } />*/}
+                    <Route exact path={'/'} component={ Home } />
+                    <Route exact path={'/video/:id'} component={ VideoPlayer } />
                 </Switch>
             </Router>
         </div>
     );
-  }
 }
 
 export default App;
