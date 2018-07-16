@@ -82,6 +82,10 @@ class Upload extends Component {
     submitVideo = (event) => {
        event.preventDefault();
 
+        /**In case we have input fields fot Video Title or whatever
+         * usage - > ['files','title','format'...]
+         * in case of more fields, it need to be implemented through render()
+         * **/
        this.formValidation(['files'], (isValid)=> {
            if (isValid) {
                const data = this.state.form;
@@ -150,7 +154,7 @@ class Upload extends Component {
                             </div>
                             <div className={'samba-app-form-actions'}>
                                 {
-                                    files.length ? <button type={'submit'} className={'samba-app-button primary'}>Upload to bucket</button> :null
+                                    files.length ? <button type={'submit'} id={'submit-btn'} className={'samba-app-button primary'}>Upload to bucket</button> :null
                                 }
 
                             </div>

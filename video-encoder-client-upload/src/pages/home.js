@@ -58,7 +58,6 @@ class Home extends Component {
             default:
                 return <UploadForm
                     uploadEvent = {(event) => {
-                        console.log('Upload event', event);
                         let data = this.state.data;
 
                         if(_.get(event, 'type') === 'success' ) {
@@ -71,7 +70,6 @@ class Home extends Component {
                         })
                     }}
                     uploadStart={(data) => {
-                        console.log('look', data);
                         this.setState({
                             data: data,
                             component: 'Uploading',

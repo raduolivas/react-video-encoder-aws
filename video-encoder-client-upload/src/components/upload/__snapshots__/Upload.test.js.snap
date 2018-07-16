@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Upload  receive cancel props 1`] = `
+<div
+  className="samba-app-card"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="samba-app-card-header"
+    >
+      <div
+        className="samba-app-card-header-inner"
+      >
+        <div
+          className="samba-app-file-select-zone"
+        >
+          <label
+            htmlFor="file"
+          >
+            <input
+              id="file"
+              multiple={true}
+              name="file"
+              onChange={[Function]}
+              type="file"
+            />
+            <span>
+              <span
+                className="samba-app-upload-btn"
+              >
+                Select a video to upload
+              </span>
+              <span
+                className="samba-app-upload-description"
+              >
+                You can select multiples videos.
+              </span>
+            </span>
+          </label>
+        </div>
+        <div
+          className="samba-app-form-actions"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Upload  receive data props 1`] = `
+<div
+  className="samba-app-card"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="samba-app-card-header"
+    >
+      <div
+        className="samba-app-card-header-inner"
+      >
+        <div
+          className="samba-app-file-select-zone"
+        >
+          <label
+            htmlFor="file"
+          >
+            <input
+              id="file"
+              multiple={true}
+              name="file"
+              onChange={[Function]}
+              type="file"
+            />
+            <span>
+              <span
+                className="samba-app-upload-btn"
+              >
+                Select a video to upload
+              </span>
+              <span
+                className="samba-app-upload-description"
+              >
+                You can select multiples videos.
+              </span>
+            </span>
+          </label>
+        </div>
+        <div
+          className="samba-app-form-actions"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Upload  receive event props 1`] = `
+<div
+  className="samba-app-card"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="samba-app-card-header"
+    >
+      <div
+        className="samba-app-card-header-inner"
+      >
+        <div
+          className="samba-app-file-select-zone"
+        >
+          <label
+            htmlFor="file"
+          >
+            <input
+              id="file"
+              multiple={true}
+              name="file"
+              onChange={[Function]}
+              type="file"
+            />
+            <span>
+              <span
+                className="samba-app-upload-btn"
+              >
+                Select a video to upload
+              </span>
+              <span
+                className="samba-app-upload-description"
+              >
+                You can select multiples videos.
+              </span>
+            </span>
+          </label>
+        </div>
+        <div
+          className="samba-app-form-actions"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Upload  receive uploadEvent props 1`] = `
+<div
+  className="samba-app-card"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="samba-app-card-header"
+    >
+      <div
+        className="samba-app-card-header-inner"
+      >
+        <div
+          className="samba-app-file-select-zone"
+        >
+          <label
+            htmlFor="file"
+          >
+            <input
+              id="file"
+              multiple={true}
+              name="file"
+              onChange={[Function]}
+              type="file"
+            />
+            <span>
+              <span
+                className="samba-app-upload-btn"
+              >
+                Select a video to upload
+              </span>
+              <span
+                className="samba-app-upload-description"
+              >
+                You can select multiples videos.
+              </span>
+            </span>
+          </label>
+        </div>
+        <div
+          className="samba-app-form-actions"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Upload  receive uploadStart props 1`] = `
+<div
+  className="samba-app-card"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="samba-app-card-header"
+    >
+      <div
+        className="samba-app-card-header-inner"
+      >
+        <div
+          className="samba-app-file-select-zone"
+        >
+          <label
+            htmlFor="file"
+          >
+            <input
+              id="file"
+              multiple={true}
+              name="file"
+              onChange={[Function]}
+              type="file"
+            />
+            <span>
+              <span
+                className="samba-app-upload-btn"
+              >
+                Select a video to upload
+              </span>
+              <span
+                className="samba-app-upload-description"
+              >
+                You can select multiples videos.
+              </span>
+            </span>
+          </label>
+        </div>
+        <div
+          className="samba-app-form-actions"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;

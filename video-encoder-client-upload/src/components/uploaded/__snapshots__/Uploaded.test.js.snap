@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UploadSent  receive data props 1`] = `
+<div
+  className="samba-app-card app-card-upload-sent"
+>
+  <div
+    className="samba-app-card-content"
+  >
+    <div
+      className="samba-app-card-content-inner"
+    >
+      <div
+        className="samba-app-home-uploading"
+      >
+        <div
+          className="samba-app-home-upload-sent-icon"
+        >
+          VIDEO SENT
+        </div>
+        <div
+          className="samba-app-upload-sent-actions samba-app-form-actions"
+        >
+          <button
+            className="samba-app-button"
+            onClick={[Function]}
+            type="button"
+          >
+            Send another file
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UploadSent  receive sendAnotherFile props 1`] = `
+<div
+  className="samba-app-card app-card-upload-sent"
+>
+  <div
+    className="samba-app-card-content"
+  >
+    <div
+      className="samba-app-card-content-inner"
+    >
+      <div
+        className="samba-app-home-uploading"
+      >
+        <div
+          className="samba-app-home-upload-sent-icon"
+        >
+          VIDEO SENT
+        </div>
+        <div
+          className="samba-app-upload-sent-actions samba-app-form-actions"
+        >
+          <button
+            className="samba-app-button"
+            onClick={[Function]}
+            type="button"
+          >
+            Send another file
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
