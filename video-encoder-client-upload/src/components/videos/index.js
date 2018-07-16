@@ -20,7 +20,6 @@ class Videos extends Component {
     async  componentDidMount() {
         VideosDataStorage(this.param).then(videos => {
             this.loading = false;
-            let currentVideo = videos.data[0].job.output_media_files[0].url;
             this.setState({videos});
         });
     }

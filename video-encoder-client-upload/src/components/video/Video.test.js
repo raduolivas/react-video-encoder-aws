@@ -4,10 +4,6 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 import Adapter from 'enzyme-adapter-react-16';
 import { stub } from 'sinon';
 
-
-
-import mock from '../../mocks/single-video-mock.json';
-
 import Video from './';
 
 configure({adapter: new Adapter()});
@@ -19,7 +15,7 @@ describe('Video ', () => {
     beforeEach(() => {
 
         props = {
-            video: mock,
+            video: undefined,
             key: undefined,
             clicked: undefined
         }
@@ -39,9 +35,7 @@ describe('Video ', () => {
     });
 
     it('receive video props', () => {
-        wrapper = shallow(<Video video={mock}/>)
         const render = new ShallowRenderer();
-        // render.render(<Video video={mock} />);
         const tree = render.getRenderOutput();
         expect(tree).toMatchSnapshot();
     });

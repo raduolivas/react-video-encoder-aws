@@ -9,7 +9,7 @@ const Video = (props) => {
 
     return (
         <div className={'samba-item-video'} onClick={props.clicked}>
-            <div className={'samba-video-thumb'}><img src={thumbUrl} /></div>
+            <div className={'samba-video-thumb'}><img src={thumbUrl} alt={'Video image'}/></div>
             <div className={'samba-video-status'}><span>Name: {label.substring(0, 15)}...</span></div>
             <div className={'samba-video-status'}><span>Encode: {video.job.state}</span></div>
         </div>

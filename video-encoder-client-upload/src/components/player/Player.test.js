@@ -1,7 +1,5 @@
 import React from 'react';
 import { configure, shallow, mount } from 'enzyme';
-import ShallowRenderer from 'react-test-renderer/shallow';
-import VideosDataStorage from '../../services/api/VideosDataStorage';
 import Adapter from 'enzyme-adapter-react-16';
 import { stub } from 'sinon';
 

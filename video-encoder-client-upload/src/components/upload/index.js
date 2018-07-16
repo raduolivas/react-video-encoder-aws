@@ -114,7 +114,7 @@ class Upload extends Component {
     }
 
     render() {
-        const {form, errors} = this.state;
+        const {form} = this.state;
         const {files} = form;
         return (
             <div className={'samba-app-card'}>

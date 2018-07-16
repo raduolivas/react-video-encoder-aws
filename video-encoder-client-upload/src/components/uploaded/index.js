@@ -1,6 +1,5 @@
-import React,{Component} from 'react'
+import React from 'react'
 import './Uploaded.css';
-import _ from 'lodash';
 
 const UploadSent = (props) =>{
 
