@@ -1,23 +1,23 @@
 const express = require('express');
-const s3 =  require('./s3-config.json');
+
 
 /**AWS S3 Configuration and Access parameters
  * **/
 const S3_ACCESS_CONFIG = {
-    accessKeyId: s3.accessKeyId,
-    secretAccessKey: s3.secretAccessKey,
-    region: s3.region
+    accessKeyId: process.env.S3_KEY,
+    secretAccessKey: process.env.S3_SECRET,
+    region: process.env.S3_REGION
 };
 
-const S3_BUCKET = 'videos-encoder-nodejs-virginia';
-
+const S3_BUCKET = process.env.S3_BUCKET;
+console.log('ENV_VARS', process.env);
 /**ZENCODER Access Parameters
  * **/
-const ZENCODER_KEY = '2e3c6249b58d83d2e25a8b09ce1703ea';
+const ZENCODER_KEY = process.env.ZENCODER_KEY;
 
 module.exports = Object.freeze({
     s3Access : S3_ACCESS_CONFIG,
-    s3Region : s3.region,
+    s3Region : process.env.S3_REGION,
     s3Bucket: S3_BUCKET,
     zenCoderKey: ZENCODER_KEY
 });
