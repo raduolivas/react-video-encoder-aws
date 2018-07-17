@@ -1,3 +1,3 @@
-const production = false;
+const production = true;
 
-export const apiUrl = production ? 'http://domain.com/api' : 'http://localhost:3001/videos';
+export const apiUrl = production ? 'https://samba-challenge-api.herokuapp.com/videos' : 'http://localhost:3001/videos';

@@ -9,7 +9,7 @@ const S3_ACCESS_CONFIG = {
     region: s3.region
 };
 
-const S3_BUCKET = 'samba-challenge-videos';
+const S3_BUCKET = 'videos-encoder-nodejs-virginia';
 
 /**ZENCODER Access Parameters
  * **/
