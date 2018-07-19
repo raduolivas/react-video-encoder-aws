@@ -1,6 +1,6 @@
-# Samba Challenge Video Encode
+# Video Encoder App
 
-Samba Challenge Encode is a React + Nodejs solution for `multipart/form-data` upload through AWS S3 Bucket.
+Video Encoder App is a React + Nodejs solution for `multipart/form-data` upload through AWS S3 Bucket.
 
 
 ## Usage
