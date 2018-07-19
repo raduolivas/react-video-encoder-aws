@@ -5,34 +5,34 @@ a {
 * {
   box-sizing: border-box; }
 
-.samba-app-layout {
+.encoder-app-layout {
   max-width: 1000px;
   margin: 0 auto;
 }
 @media (min-width: 992px) {
-  .samba-app-layout {
+  .encoder-app-layout {
     padding: 0px 50px 50px 50px;
   }
 }
 
-.samba-app-container {
+.encoder-app-container {
   position: relative;
   overflow: hidden;
   padding: 20px 0 0 0;
 }
 
-.samba-app-container .samba-app-header {
+.encoder-app-container .encoder-app-header {
   padding-bottom: 30px;
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  .samba-app-container .samba-app-header {
+  .encoder-app-container .encoder-app-header {
     float: left;
     padding-top: 100px;
     text-align: left;
   }
-  .samba-app-container .samba-app-content {
+  .encoder-app-container .encoder-app-content {
     float: none;
     display: block;
     margin-left: auto;
@@ -54,7 +54,7 @@ a {
   font-weight: 800;
 }
 
-.samba-app-form-actions .samba-app-button {
+.encoder-app-form-actions .encoder-app-button {
   width: 100%;
   text-align: center;
   display: block;
@@ -68,34 +68,34 @@ a {
   padding: 10px 15px;
   text-transform: uppercase;
 }
-.samba-app-form-actions
-.samba-app-button.primary {
+.encoder-app-form-actions
+.encoder-app-button.primary {
   background: #1b65f6;
   color: #FFFFFF;
 }
-.samba-app-form-actions
-.samba-app-button
-.samba-app-button-link {
+.encoder-app-form-actions
+.encoder-app-button
+.encoder-app-button-link {
   background: none;
   border: 0 none;
   color: #1b65f6;
 }
 
-.samba-videos-container .loading {
+.encoder-videos-container .loading {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 20%;
 }
 
-.samba-goback-btn {
+.encoder-goback-btn {
   color:#fff;
   padding: 10px 10px 10px 0;
   cursor:pointer;
   margin: 0 10px 10px 0;
 }
 
-.samba-goback-btn :hover {
+.encoder-goback-btn :hover {
   background-color: #b2d8f8;
   padding: 10px 10px 10px 10px;
 }

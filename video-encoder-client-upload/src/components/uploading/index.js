@@ -29,23 +29,23 @@ class Uploading extends Component {
         const totalFiles = _.get(data, 'files', []).length;
 
         return (
-            <div className={'samba-app-card samba-app-card-uploading'}>
-                <div className={'samba-app-card-content'}>
-                    <div className={'samba-app-card-content-inner'}>
-                        <div className={'samba-app-home-uploading'}>
+            <div className={'encoder-app-card encoder-app-card-uploading'}>
+                <div className={'encoder-app-card-content'}>
+                    <div className={'encoder-app-card-content-inner'}>
+                        <div className={'encoder-app-home-uploading'}>
 
-                            <div className={'samba-app-home-uploading-icon'}>
+                            <div className={'encoder-app-home-uploading-icon'}>
                                 <img src={loadingImage} />
                             </div>
 
-                            <div className={'samba-app-upload-files-total'}>Uploading {totalFiles} files.</div>
+                            <div className={'encoder-app-upload-files-total'}>Uploading {totalFiles} files.</div>
 
-                            <div className={'samba-app-form-actions'}>
+                            <div className={'encoder-app-form-actions'}>
                                 <button onClick={() => {
                                     if(this.props.cancel){
                                         this.props.cancel(true)
                                     }
-                                }} className={'samba-app-upload-cancel-button samba-app-button'} type={'button'}>Cancel</button>
+                                }} className={'encoder-app-upload-cancel-button encoder-app-button'} type={'button'}>Cancel</button>
                             </div>
                         </div>
                     </div>

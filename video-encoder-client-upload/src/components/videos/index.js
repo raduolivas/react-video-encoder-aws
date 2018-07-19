@@ -33,8 +33,8 @@ class Videos extends Component {
             return <Link to={`/video/${vd.job.id}`}><Video video={vd} key={index} clicked={() => this.videoClicked(vd.job.id)} /></Link>;
         });
         return (
-            <div className={'samba-videos-container'}>
-                <div className={'samba-videos'}>
+            <div className={'encoder-videos-container'}>
+                <div className={'encoder-videos'}>
                     {this.loading && <img className="loading" src={loadingImage} />}
                     {videoList}
                 </div>

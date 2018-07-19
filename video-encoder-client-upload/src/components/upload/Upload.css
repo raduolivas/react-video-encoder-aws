@@ -1,5 +1,5 @@
 
-.samba-app-card {
+.encoder-app-card {
     overflow: hidden;
     position: relative;
     background: #FFFFFF;
@@ -8,50 +8,50 @@
     border-radius: 5px;
 }
 
-.samba-app-card .samba-app-card-header {
+.encoder-app-card .encoder-app-card-header {
     background: #f3f7ff;
 }
-.samba-app-card .samba-app-card-header .samba-app-card-header-inner {
+.encoder-app-card .encoder-app-card-header .encoder-app-card-header-inner {
     padding: 10px 20px;
 }
-.samba-app-card .samba-app-card-content .samba-app-card-content-inner {
+.encoder-app-card .encoder-app-card-content .encoder-app-card-content-inner {
     padding: 20px;
 }
-.samba-app-card.app-card-uploading
-.samba-app-card-content
-.samba-app-card-content-inner,
-.samba-app-card.app-card-upload-sent
-.samba-app-card-content
-.samba-app-card-content-inner {
+.encoder-app-card.app-card-uploading
+.encoder-app-card-content
+.encoder-app-card-content-inner,
+.encoder-app-card.app-card-upload-sent
+.encoder-app-card-content
+.encoder-app-card-content-inner {
     padding: 40px;
 }
 
-.samba-app-file-select-zone {
+.encoder-app-file-select-zone {
     width: 100%;
     display: block;
     text-align: center;
     padding: 10px 0 0 0;
 }
 
-.samba-app-file-select-zone label {
+.encoder-app-file-select-zone label {
     display: block;
     width: 100%;
 }
-.samba-app-file-select-zone label input {
+.encoder-app-file-select-zone label input {
     position: fixed;
     top: -9999px;
 }
 
-.samba-app-file-select-zone .samba-app-upload-description {
+.encoder-app-file-select-zone .encoder-app-upload-description {
     font-size: 12px;
     display: block;
     cursor: pointer;
 }
-.samba-app-file-select-zone .samba-app-upload-description:hover {
+.encoder-app-file-select-zone .encoder-app-upload-description:hover {
     color:#1b65f6;
 }
 
-.samba-app-file-select-zone .samba-app-upload-btn {
+.encoder-app-file-select-zone .encoder-app-upload-btn {
     display: inline-block;
     margin-bottom: 10px;
     width: 100%;
@@ -61,11 +61,11 @@
     cursor: pointer;
     padding: 14px;
 }
-.samba-app-file-select-zone .samba-app-upload-btn:hover {
+.encoder-app-file-select-zone .encoder-app-upload-btn:hover {
     background-color: #cccccc;
     color:#fff;
 }
-.samba-app-file-select-zone .samba-app-upload-icon i {
+.encoder-app-file-select-zone .encoder-app-upload-icon i {
     position: absolute;
     left: 10px;
     top: -10px;
@@ -73,21 +73,21 @@
     font-size: 28px;
 }
 
-.samba-app-file-select-zone.error .samba-app-upload-icon {
+.encoder-app-file-select-zone.error .encoder-app-upload-icon {
     border-color: #d0152e;
 }
 
-.samba-app-form-item {
+.encoder-app-form-item {
     margin: 0 0 15px 0;
 }
-.samba-app-form-item label {
+.encoder-app-form-item label {
     text-transform: uppercase;
     display: block;
     font-weight: 400;
     margin: 0 0 8px 0;
 }
 
-.samba-app-form-actions .samba-app-button {
+.encoder-app-form-actions .encoder-app-button {
     width: 100%;
     text-align: center;
     display: block;
@@ -104,7 +104,7 @@
     margin:30px 0 0 0;
 }
 
-.samba-app-files-selected {
+.encoder-app-files-selected {
     max-height: 150px;
     overflow-y: auto;
     background: #FFFFFF;
@@ -112,13 +112,13 @@
     margin: -20px -20px 0 -20px;
     padding: 20px;
 }
-.samba-app-files-selected .samba-app-files-selected-item{
+.encoder-app-files-selected .encoder-app-files-selected-item{
     width:180px;
     display: inline-block;
     margin:0 10px;
 }
 
-.samba-app-files-selected .samba-app-files-selected-item .filename {
+.encoder-app-files-selected .encoder-app-files-selected-item .filename {
     flex-grow: 1;
     display: inline-block;
     background-color:#b2d8f8 ;
@@ -128,7 +128,7 @@
     border-radius: 6px 0 0 6px;
 }
 
-.samba-app-files-selected .samba-app-file-remove {
+.encoder-app-files-selected .encoder-app-file-remove {
     border: 0 none;
     padding: 10px 11px 11px;
     font-size: 12px;
@@ -141,7 +141,7 @@
     margin-top: 5px;
     border-radius: 0 6px 6px 0;
 }
-.samba-app-files-selected .samba-app-file-remove span {
+.encoder-app-files-selected .encoder-app-file-remove span {
     color:#fff;
     width:20px;
     height:20px;
@@ -151,12 +151,12 @@
     color: #d0152e;
 }
 
-.samba-app-home-uploading-icon {
+.encoder-app-home-uploading-icon {
     display: block;
     text-align: center;
 }
 
-.samba-app-home-uploading-icon i {
+.encoder-app-home-uploading-icon i {
     font-size: 60px;
     display: inline-block;
     border: 1px solid #96a3bb;
@@ -166,18 +166,18 @@
     line-height: 100px;
 }
 
-.samba-app-home-uploading-icon h2 {
+.encoder-app-home-uploading-icon h2 {
     margin: 20px 0 0 0;
     padding: 0;
     font-size: 17px;
 }
 
-.samba-app-home-upload-sent-icon {
+.encoder-app-home-upload-sent-icon {
     display: block;
     text-align: center;
 }
 
-.samba-app-home-upload-sent-icon i {
+.encoder-app-home-upload-sent-icon i {
     font-size: 50px;
     display: inline-block;
     border: 1px solid #96a3bb;
@@ -187,20 +187,20 @@
     line-height: 100px;
 }
 
-.samba-app-upload-files-total {
+.encoder-app-upload-files-total {
     margin-top: 20px;
 }
 
-.samba-app-upload-stats {
+.encoder-app-upload-stats {
     display: flex;
     flex-direction: row;
 }
 
-.samba-app-upload-stats .app-upload-stats-left {
+.encoder-app-upload-stats .app-upload-stats-left {
     flex-grow: 1;
 }
 
-.samba-app-progress {
+.encoder-app-progress {
     background: #f1f8fe;
     border: 1px solid #b2d8f8;
     height: 15px;
@@ -212,7 +212,7 @@
     overflow: hidden;
 }
 
-.samba-app-progress .samba-app-progress-bar {
+.encoder-app-progress .encoder-app-progress-bar {
     display: block;
     position: absolute;
     left: 0;
@@ -222,24 +222,24 @@
     background: #1b65f6;
 }
 
-.samba-app-upload-cancel-button {
+.encoder-app-upload-cancel-button {
     margin-top: 50px;
 }
 
-.samba-app-text-center {
+.encoder-app-text-center {
     text-align: center;
 }
 
-.samba-app-form-item {
+.encoder-app-form-item {
     margin: 15px ;
 }
-.samba-app-form-item label {
+.encoder-app-form-item label {
     text-transform: uppercase;
     display: block;
     font-weight: 400;
     margin: 0 0 8px 0;
 }
-.samba-app-form-item input[type='text'] {
+.encoder-app-form-item input[type='text'] {
     width: 100%;
     border: 1px solid #e0e0e0;
     outline: 0 none;
@@ -248,6 +248,6 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-.samba-app-form-item input[type='text']:focus, .samba-app-form-item input[type='text'] :active{
+.encoder-app-form-item input[type='text']:focus, .encoder-app-form-item input[type='text'] :active{
     outline: 0 none;
 }

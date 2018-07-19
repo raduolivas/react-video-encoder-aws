@@ -9,7 +9,7 @@ import './App.css';
 
 const App =() => {
    return (
-        <div className={'samba-app-layout'}>
+        <div className={'encoder-app-layout'}>
             <Router history={history}>
                 <Switch>
                     <Route exact path={'/'} component={ Home } />

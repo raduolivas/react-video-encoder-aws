@@ -38,8 +38,8 @@ class VideoPlayer extends Component  {
                 {this.loading && <img className="loading" src={loadingImage} />}
                 {this.state.isLoaded &&
                     <div>
-                        <h2 className={'samba-video-title'}>{this.state.video.data.job.output_media_files[0].label}</h2>
-                        <div onClick={this.goback} className={'samba-goback-btn'}><span>GO BACK</span></div>
+                        <h2 className={'encoder-video-title'}>{this.state.video.data.job.output_media_files[0].label}</h2>
+                        <div onClick={this.goback} className={'encoder-goback-btn'}><span>GO BACK</span></div>
                         <Video autoPlay loop muted
                            controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
                            poster=""

@@ -117,19 +117,19 @@ class Upload extends Component {
         const {form} = this.state;
         const {files} = form;
         return (
-            <div className={'samba-app-card'}>
+            <div className={'encoder-app-card'}>
                 <form onSubmit={this.submitVideo}>
-                    <div className={'samba-app-card-header'}>
-                        <div className={'samba-app-card-header-inner'}>
+                    <div className={'encoder-app-card-header'}>
+                        <div className={'encoder-app-card-header-inner'}>
                             {
                                 files.length ?
-                                    <div className={'samba-app-files-selected'}>
+                                    <div className={'encoder-app-files-selected'}>
                                         {
                                             files.map((file, index) => {
                                                 return (
-                                                    <div key={index} className={'samba-app-files-selected-item'}>
+                                                    <div key={index} className={'encoder-app-files-selected-item'}>
                                                         <div className={'filename'}>{file.name.substring(0, 20)}</div>
-                                                        <div className={'samba-app-file-remove'}>
+                                                        <div className={'encoder-app-file-remove'}>
                                                             <span onClick={() => this.removeFile(index)}
                                                             type={'button'} >X
                                                             </span>
@@ -140,21 +140,21 @@ class Upload extends Component {
                                         }
                                     </div> : null
                             }
-                            <div className={classNames('samba-app-file-select-zone', {'error': _.get(this.errors, 'files')})}>
+                            <div className={classNames('encoder-app-file-select-zone', {'error': _.get(this.errors, 'files')})}>
                                 <label htmlFor={'file'}>
                                     <input onChange={this.fileAddedHandler} id={'file'} type="file" name="file" multiple={true}/>
                                     {
-                                    files.length ? <span className={'samba-app-upload-description text-uppercase'}>Add more videos</span> :
+                                    files.length ? <span className={'encoder-app-upload-description text-uppercase'}>Add more videos</span> :
                                     <span>
-                                        <span className={'samba-app-upload-btn'}>Select a video to upload</span>
-                                        <span className={'samba-app-upload-description'}>You can select multiples videos.</span>
+                                        <span className={'encoder-app-upload-btn'}>Select a video to upload</span>
+                                        <span className={'encoder-app-upload-description'}>You can select multiples videos.</span>
                                     </span>
                                     }
                                 </label>
                             </div>
-                            <div className={'samba-app-form-actions'}>
+                            <div className={'encoder-app-form-actions'}>
                                 {
-                                    files.length ? <button type={'submit'} id={'submit-btn'} className={'samba-app-button primary'}>Upload to bucket</button> :null
+                                    files.length ? <button type={'submit'} id={'submit-btn'} className={'encoder-app-button primary'}>Upload to bucket</button> :null
                                 }
 
                             </div>

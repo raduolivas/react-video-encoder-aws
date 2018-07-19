@@ -79,7 +79,8 @@ describe('Videos ', () => {
     it("should call API fetching Videos", () => {
         const responseJson = fetchResponseJson(`https://samba-challenge-api.herokuapp.com/videos`);
         responseJson.then((data) => {
-            expect(data).not.toHaveProperty(`data`, `job`)
+
+            expect(data).toHaveProperty(`data`, [])
         })
     });
 

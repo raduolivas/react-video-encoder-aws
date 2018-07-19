@@ -1,14 +1,14 @@
-.samba-app-card
-.samba-app-card-uploading
-.samba-app-card-content
-.samba-app-card-content-inner,
-.samba-app-card
-.samba-app-card-upload-sent
-.samba-app-card-content
-.samba-app-card-content-inner {
+.encoder-app-card
+.encoder-app-card-uploading
+.encoder-app-card-content
+.encoder-app-card-content-inner,
+.encoder-app-card
+.encoder-app-card-upload-sent
+.encoder-app-card-content
+.encoder-app-card-content-inner {
     padding: 40px;
 }
 
-.samba-app-upload-files-total {
+.encoder-app-upload-files-total {
     margin-top: 20px;
 }

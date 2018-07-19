@@ -81,8 +81,8 @@ class Home extends Component {
 
     render() {
         return (
-            <div className={'samba-app-container'}>
-                <div className={'samba-app-content'}>
+            <div className={'encoder-app-container'}>
+                <div className={'encoder-app-content'}>
                     {this.renderUploadComponent()}
                     <Videos />
                 </div>
