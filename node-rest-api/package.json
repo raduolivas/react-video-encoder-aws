@@ -1,22 +1,32 @@
 {
-  "name": "rest-api",
-  "version": "1.0.0",
-  "description": "Node.js RESTFul API For uploading Videos",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "node",
-    "restfull"
-  ],
-  "author": "Rodolfo",
-  "license": "ISC",
+  "name": "encoder-challenge-video-encoder",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "aws-sdk": "^2.271.1",
-    "express": "^4.16.3",
-    "multer": "^1.3.1",
-    "multer-s3": "^2.7.0",
-    "zencoder": "^2.0.1"
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "fetch-mock": "^6.5.0",
+    "react": "^16.4.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.4.1",
+    "react-html5video": "^2.5.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-test-render": "^1.1.1",
+    "sinon": "^6.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jsdom": "11.11.0",
+    "jsdom-global": "3.0.2",
+    "react-jsdom": "^2.0.5"
   }
 }

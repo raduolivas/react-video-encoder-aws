@@ -1,0 +1,14 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,800";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #1b65f6;
+  color: #96a3bb;
+  font-size: 13px; }
+
+a {
+  color: #1b65f6;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }

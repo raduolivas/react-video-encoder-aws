@@ -1,0 +1,24 @@
+.encoder-item-video {
+    fload:left;
+    margin:9px 7px 9px 0;
+    display:inline-block;
+    cursor: pointer;
+    color:#FFFFFF;
+}
+.encoder-item-video
+.encoder-video-thumb {
+    width:143px;
+    height:94px;
+    background-color: #FFFFFF;
+    padding:6px 6px;
+}
+
+.encoder-item-video
+.encoder-video-thumb
+.encoder-video-status {
+    position:relative;
+}
+
+.encoder-video-status span {
+    font-size: 11px;
+}

@@ -1,0 +1,18 @@
+.encoder-app-upload-sent-message h2 {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.encoder-app-upload-sent-message p {
+    line-height: 1.5em;
+}
+
+.encoder-app-upload-sent-actions {
+    margin: 20px 0;
+}
+
+.encoder-app-upload-sent-actions button {
+    margin: 10px 0;
+}

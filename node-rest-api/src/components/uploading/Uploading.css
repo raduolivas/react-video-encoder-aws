@@ -1,0 +1,14 @@
+.encoder-app-card
+.encoder-app-card-uploading
+.encoder-app-card-content
+.encoder-app-card-content-inner,
+.encoder-app-card
+.encoder-app-card-upload-sent
+.encoder-app-card-content
+.encoder-app-card-content-inner {
+    padding: 40px;
+}
+
+.encoder-app-upload-files-total {
+    margin-top: 20px;
+}

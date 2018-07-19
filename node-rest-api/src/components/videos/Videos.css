@@ -1,0 +1,23 @@
+.encoder-videos-container {
+    position:relative;
+    margin:10px 0 0 0;
+    min-height: 100px;
+
+}
+@media (min-width: 992px) {
+.encoder-videos-container
+    .encoder-videos {
+
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+}
+
+.encoder-video-player {
+    float: right;
+    margin: 0 0 0 25px;
+}
