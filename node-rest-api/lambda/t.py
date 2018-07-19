@@ -56,7 +56,7 @@ def _build_api_data(b, k):
                     "height": 80,
                     "aspect_mode": "crop",
                     "base_url": S3_OUTPUT_BASE_URL,
-                    "label": "samba_thumb_sm",
+                    "label": "_thumb_sm",
                     "filename": output_key + "_{{number}}_{{width}}x{{height}}-thumbnail",
                     "public": True
                 },
@@ -65,7 +65,7 @@ def _build_api_data(b, k):
                     "size": "400x300",
                     "aspect_mode": "crop",
                     "base_url": S3_OUTPUT_BASE_URL,
-                    "label": "samba_thumb_lg",
+                    "label": "_thumb_lg",
                     "filename": output_key + "_{{number}}_{{width}}x{{height}}-thumbnail",
                     "public": True
                 }

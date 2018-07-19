@@ -28,7 +28,7 @@ const upload = multer({
  * **/
 router.post('/', upload.array('file', 10),(req, res, next) => {
     var file = req.files;
-    console.log('=' * 20)
+    console.log('=' * 20);
     console.log(file);
     res.status(200).json({
         message: 'Video Uploaded Successfully'
